@@ -170,11 +170,11 @@ function Listusers() {
 //edits the user 
 function Edituser() {
   const history = useHistory();
-  const [newlist, setnewlist] = useState([]);
-  {/* takes the id from the dynamic path using the hook useparams */ }
+  /* takes the id from the dynamic path using the hook useparams */ 
   var user = localStorage.getItem("user");
   user = JSON.parse(user);
   const [userName, setUserName] = useState(user.name);
+  // eslint-disable-next-line 
   const [ID, setId] = useState(user.id);
   const [email, setEmail] = useState(user.email);
   const [gender, setGender] = useState(user.gender);
